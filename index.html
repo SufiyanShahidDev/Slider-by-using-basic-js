@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>Our Reviews</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
+
+    <section class="container">
+        <h2>Our Reviews</h2>
+        <div class="underline"></div>
+
+        <article class="review">
+            <div class="img-container">
+                <img id="reviewer-img" src="" alt="reviewer" />
+                <span class="quote">❝</span>
+            </div>
+
+            <h4 id="reviewer"></h4>
+            <p id="job"></p>
+            <p id="description"></p>
+
+            <div class="button-container">
+                <button class="prev-btn" onclick="prevPerson()">‹</button>
+                <button class="next-btn" onclick="nextPerson()">›</button>
+            </div>
+
+            <button class="random-btn" onclick="randomPerson()">Surprise Me</button>
+        </article>
+    </section>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
